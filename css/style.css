@@ -1,0 +1,610 @@
+@font-face {
+  font-family: 'Calibri';
+  src: url('../fonts/Calibri.woff') format('woff'),
+       url('../fonts/Calibri.ttf') format('truetype'),
+       url('../fonts/Calibri.svg#Calibri') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Calibri-Light';
+  src: url('../fonts/Calibri-Light.woff') format('woff'),
+       url('../fonts/Calibri-Light.ttf') format('truetype'),
+       url('../fonts/Calibri-Light.svg#Calibri-Light') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Calibri-LightItalic';
+  src: url('../fonts/Calibri-LightItalic.woff') format('woff'),
+       url('../fonts/Calibri-LightItalic.ttf') format('truetype'),
+       url('../fonts/Calibri-LightItalic.svg#Calibri-LightItalic') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Calibri';
+  src: url('../fonts/Calibri-Bold.woff') format('woff'),
+       url('../fonts/Calibri-Bold.ttf') format('truetype'),
+       url('../fonts/Calibri-Bold.svg#Calibri-Bold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+}
+
+body{
+    font-family: 'Calibri', sans-serif;
+}
+main{
+    height: 966px;
+}
+main .slide{
+    background: url('../images/slide_1.png') no-repeat top center;
+    height: 966px;
+    text-align: center;
+}
+main .slide .body{
+    padding-top: 380px;
+}
+main .slide a{
+    display: inline-block;
+    padding: 0px 50px;
+    line-height: 61px;
+    background-color: #9d3586;
+    border: 1px solid #94227c;
+    border-radius: 3px;
+    color: white;
+    font-weight: 400;
+    font-size: 25px;
+    text-decoration: none;
+}
+main .slide a:hover{
+    background-color: #94227c;
+}
+header .phone{
+    margin-bottom: 23px;
+    padding-right: 30px;
+}
+header{
+    padding-top: 20px;
+    background: url('../images/header_bg.png') repeat-x top center;
+    min-height: 290px;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+}
+header .tel{
+    float: right;
+    color: black;
+    font-size: 31px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 25px;
+}
+header .tel a{
+    color: black;
+    font-size: 16px;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-bottom: 1px dashed #000;
+}
+header .tel a:hover{
+    border: none;
+}
+header .navbar-collapse{
+    padding: 0px;
+    border: none;
+    overflow: hidden;
+}
+header .navbar-default{
+    background-color: rgba(148, 34, 124, 0.9);
+    border: none;
+    border-radius: 3px;
+}
+header .navbar-default .navbar-justified>li>a{
+    color: #fff;
+}
+header nav a{
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 50px;
+    padding: 0px 5px!important;
+}
+header .nav-justified>li:hover>a, header .nav-justified>li.active>a{
+    background-color: #94227c;
+    color: #fff;
+}
+
+#about{}
+#about .img{
+    background: url('../images/about_bg.png') no-repeat right top;
+    height: 511px;
+}
+#about .inf{
+    height: 511px;
+    background-color: #94227c;
+    padding-left: 60px;
+}
+#about .inf h1{
+    color: white;
+    font-family: 'Calibri', sans-serif;
+    font-size: 93px;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin-top: 60px;
+}
+#about .inf p{
+    color: white;
+    font-family: 'Calibri-Light', sans-serif;
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 24px;
+    margin-bottom: 25px;
+}
+#about .inf a{
+    line-height: 61px;
+    border: 1px solid white;
+    border-radius: 3px;
+    display: inline-block;
+    padding: 0px 40px;
+    color: white;
+    font-size: 19px;
+    font-weight: 300;
+    text-decoration: none;
+}
+#about .inf a:hover{
+    background: #fff;
+    color: #94227c;
+}
+
+
+#service{
+    text-align: center;
+    padding: 65px 0px;
+}
+#service .item{}
+#service .item img{
+    padding-bottom: 35px;
+}
+#service .item p{
+    color: black;
+    font-family: 'Calibri', sans-serif;
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 24px;
+    padding: 0px 20px;
+}
+
+#quote{
+    text-align: center;
+}
+#quote .item{
+    background-color: #f9f9f9;
+    border-radius: 77px;
+    padding: 50px 0px;
+}
+#quote .item p{
+    color: black;
+    display: inline-block;
+    font-family: 'Calibri', sans-serif;
+    font-size: 17px;
+    font-weight: 300;
+    font-style: italic;
+    line-height: 20px;
+    max-width: 680px;
+    position: relative;
+}
+#quote .item p:before{
+    content: '';
+    width: 21px;
+    height: 21px;
+    display: block;
+    background: url('../images/quote.png') no-repeat;
+    position: absolute;
+    top: -15px;
+    left: -40px;
+}
+#quote .item p:after{
+    content: '';
+    width: 21px;
+    height: 21px;
+    display: block;
+    background: url('../images/quote.png') no-repeat;
+    position: absolute;
+    bottom: -15px;
+    right: -40px;
+    transform: rotate(180deg);
+}
+
+#rules{
+    background-color: #94227c;
+    padding: 65px 0px;
+    text-align: center;
+    margin-top: 70px;
+}
+#rules .title{
+    color: white;
+    font-family: 'Calibri', sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 60px;
+}
+#rules img{
+    margin-bottom: 35px;
+}
+#rules p{
+    color: white;
+    font-family: 'Calibri-Light';
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 24px;
+    padding: 0px 25px;
+}
+#rules .video{
+    border-radius: 51px;
+    background: #a7278c url('../images/video.png') no-repeat 27px 33px;
+    padding: 27px 30px 27px 71px;
+    margin: 40px 0px 0px;
+}
+#rules .video p{
+    color: white;
+    font-family: 'Calibri-Light';
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 18px;
+    text-align: left;
+    margin: 0px;
+}
+
+footer{
+    padding: 50px 0px;
+}
+footer .logo img{
+    max-width: 260px;
+}
+footer .title{
+    color: black;
+    font-family: 'Calibri', sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 20px;
+    text-transform: uppercase;
+    margin-bottom: 45px;
+}
+footer p{
+    color: black;
+    font-family: 'Calibri', sans-serif;
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 24px;
+}
+footer .copy{
+    font-family: 'Calibri', sans-serif;
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 24px;
+}
+footer .copy a{
+    color: #94227c;
+    text-decoration: underline; 
+    display: inline-block;
+    margin: 0px 10px;
+}
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #FFF;
+}
+
+
+
+/* Large desktop */
+@media (min-width: 1200px){
+
+}
+ 
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) {
+    header .phone{
+        margin-top: 60px;
+    }
+    header .navbar-default{
+        margin-top: 40px;
+    }
+    #about .inf h1{
+        font-size: 83px;
+    }
+    #service .item p{
+        padding: 0px;
+    }
+    #quote .item{
+        padding: 30px 0px;
+    }
+    #rules p{
+        padding: 0px;
+        font-size: 18px;
+    }
+    #rules .video p{
+        padding-left: 20px;
+    }
+    footer .logo img{
+        max-width: 100%;
+    }
+    footer p{
+        font-size: 14px;
+    }
+    footer .copy {
+        font-family: 'Calibri', sans-serif;
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 24px;
+        text-align: center;
+    }
+    main{
+        height: 700px;
+        overflow: hidden;
+    }
+    main .slide .body{
+        padding-top: 320px;
+    }
+}
+ 
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+
+}
+ 
+/* Landscape phones and down */
+@media (max-width: 480px) {
+    header .navbar-default{
+        margin-top: 40px;
+    }
+    main{
+        height: 680px;
+        overflow: hidden;
+    }
+    main .slide .body{
+        padding-top: 320px;
+    }
+    main .slide a {
+        padding: 0px 30px;
+        line-height: 51px;
+        font-size: 25px;
+    }
+    #about .inf{
+        padding-left: 15px;
+    }
+    #about .inf h1{
+        font-size: 63px;
+    }
+    #about .inf p br{
+        display: none;
+    }
+    #service .item{
+        margin-bottom: 40px;
+    }
+    #rules .title{
+        font-size: 20px;
+    }
+    #rules p{
+        margin-bottom: 40px;
+    }
+    footer .title{
+        margin-top: 30px;
+    }
+    #about {
+        text-align: center;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
